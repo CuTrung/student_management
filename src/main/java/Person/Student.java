@@ -48,8 +48,8 @@ public class Student extends Person {
 	}
 
 	@Override
-	public boolean isEmail() {
-		if(email.equalsIgnoreCase(" ")) {
+	public boolean isEmail(String answer) {
+		if(answer.equalsIgnoreCase(" ")) {
 			return false;
 		}
 
@@ -61,6 +61,7 @@ public class Student extends Person {
 	public void showProfile() {
 		super.showProfile();
 		System.out.printf("%-10s|%-10s|%-10s|", major, classID, ID);
+		System.out.println();
 	}
 
 }

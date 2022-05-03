@@ -67,7 +67,7 @@ public abstract class Person {
 		return super.toString();
 	}
 	
-	public abstract boolean isEmail();
+	public abstract boolean isEmail(String answer);
 
 	public void showProfile() {
 		System.out.printf("%-15s|%4s|%-30s|%-12s|%-30s|", fullName, yearOfBirth, address, phoneNumber, email);
